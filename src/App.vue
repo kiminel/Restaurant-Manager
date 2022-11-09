@@ -30,10 +30,11 @@ export default {
 .form {
   border-radius: 25px;
   box-shadow: #799cd2 0px 7px 29px 0px;
-  width: 45%;
-  text-align: center;
+  width: 35%;
+  justify-content: end;
   display: inline-block;
   align-items: center;
   margin: 5%;
+  padding: 4% 0% 4% 0%;
 }
 </style>
