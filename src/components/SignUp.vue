@@ -2,8 +2,14 @@
     <h1 class="header">Sign Up</h1>
 
     <div class="sign-up">
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
+        <div class="field">
+            <input type="text" placeholder="Email">
+            <fa icon="envelope" />
+        </div>
+        <div class="field">
+            <input type="text" placeholder="Password" />
+            <fa icon="lock" />
+        </div>
         <button>Sign Up</button>
     </div>
 </template>
@@ -17,10 +23,10 @@ export default {
   
 <style>
 .header {
-    color: #2b83d5;
+    color: #799cd2;
 }
 
-.sign-up input {
+.field {
     width: 80%;
     height: 35px;
     padding-left: 20px;
@@ -28,6 +34,18 @@ export default {
     margin: 20px auto;
     border: 1px solid #799cd2;
     border-radius: 25px;
+}
+
+.sign-up input {
+    width: 90%;
+    height: 32px;
+    border:none;
+    border-radius: 25px;
+}
+
+.sign-up input:focus {
+    outline: none;
+    border: none;
 }
 
 .sign-up button {
@@ -39,6 +57,13 @@ export default {
     border: #799cd2;
     border-radius: 25px;
     color: white;
-    background-color: #2b83d5;
+    background-color: #799cd2;
+}
+
+.sign-up button:hover {
+    color: white;
+    background-color: #6ad0c8;
+    box-shadow: 0 0 4px #6ad0c8;
+
 }
 </style>
